@@ -5,9 +5,7 @@ let freqMap = new Map()
 
 const freqList = fs.readFileSync('input.txt').toString().split('\n')
 
-const findFinalFreq = (frequencies) => {
-    return frequencies.reduce((sum, value) => parseInt(sum) + parseInt(value), 1)
-}
+const findFinalFreq = (frequencies) => frequencies.reduce((sum, value) => parseInt(sum) + parseInt(value), 1)
 
 const findFirstDup = (frequencies) => {
     let freq = 0;
